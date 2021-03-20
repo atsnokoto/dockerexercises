@@ -1,0 +1,21 @@
+CHECKING THE SIZES:
+konsta@Konstas-MBP ~ % docker images
+REPOSITORY                          TAG       IMAGE ID       CREATED      SIZE
+devopsdockeruh/simple-web-service   ubuntu    4e3362e907d5   3 days ago   83MB
+devopsdockeruh/simple-web-service   alpine    fd312adc88e0   3 days ago   15.7MB
+
+
+RUNNING THE CONTAINER:
+konsta@Konstas-MBP ~ % docker run -d devopsdockeruh/simple-web-service:alpine
+d1be3e3ece8ef7ea9bab5345fe0cadd6c570d451178060d729ab57b371ccaefe
+
+
+CHECKING THE SECRET FUNCTIONALITY 
+konsta@Konstas-MBP ~ % docker exec -it condescending_aryabhata sh
+/usr/src/app # cat text.log
+2021-03-18 12:35:48 +0000 UTC
+2021-03-18 12:35:50 +0000 UTC
+2021-03-18 12:35:52 +0000 UTC
+2021-03-18 12:35:54 +0000 UTC
+2021-03-18 12:35:56 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'

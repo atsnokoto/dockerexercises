@@ -1,0 +1,6 @@
+konsta@Konstas-MBP ~ % docker ps -a
+CONTAINER ID   IMAGE     COMMAND                  CREATED              STATUS                      PORTS     NAMES
+79763804762c   nginx     "/docker-entrypoint.…"   About a minute ago   Up 59 seconds               80/tcp    relaxed_rubin
+d07ce3b884e8   nginx     "/docker-entrypoint.…"   About a minute ago   Exited (0) 4 seconds ago              flamboyant_perlman
+68440a188056   nginx     "/docker-entrypoint.…"   About a minute ago   Exited (0) 11 seconds ago             heuristic_joliot
+konsta@Konstas-MBP ~ % 

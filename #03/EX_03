@@ -1,0 +1,24 @@
+konsta@Konstas-MBP ~ % docker run -d --name secret devopsdockeruh/simple-web-service:ubuntu
+Unable to find image 'devopsdockeruh/simple-web-service:ubuntu' locally
+ubuntu: Pulling from devopsdockeruh/simple-web-service
+5d3b2c2d21bb: Pull complete 
+3fc2062ea667: Pull complete 
+75adf526d75b: Pull complete 
+965d4bbb586a: Pull complete 
+4f4fb700ef54: Pull complete 
+Digest: sha256:d44e1dce398732e18c7c2bad9416a072f719af33498302b02929d4c112e88d2a
+Status: Downloaded newer image for devopsdockeruh/simple-web-service:ubuntu
+cdfe30249b93ab5513e6561c35bdfb22dca22db632698a0708cd6445bb287bd4
+konsta@Konstas-MBP ~ % docker exec -it secret bash
+root@cdfe30249b93:/usr/src/app# tail -f ./text.log
+2021-03-18 11:14:13 +0000 UTC
+2021-03-18 11:14:15 +0000 UTC
+2021-03-18 11:14:17 +0000 UTC
+2021-03-18 11:14:19 +0000 UTC
+2021-03-18 11:14:21 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2021-03-18 11:14:23 +0000 UTC
+2021-03-18 11:14:25 +0000 UTC
+2021-03-18 11:14:27 +0000 UTC
+2021-03-18 11:14:29 +0000 UTC
+2021-03-18 11:14:31 +0000 UTC

@@ -1,0 +1,13 @@
+FROM golang:1.15
+EXPOSE 8080
+
+WORKDIR /apps
+COPY example-backend .
+
+#EXERCISE 1.14
+ENV REQUEST_ORIGIN=http://localhost:5000
+
+RUN go build
+
+CMD ["./server"]
+

@@ -1,0 +1,5 @@
+konsta@Konstas-MBP ~ % docker ps -as
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES     SIZE
+konsta@Konstas-MBP ~ % docker images
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+konsta@Konstas-MBP ~ % 

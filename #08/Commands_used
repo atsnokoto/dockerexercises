@@ -1,0 +1,31 @@
+konsta@Konstas-MBP Dockerfile_18 % docker build . -t curler
+
+[+] Building 12.6s (9/9) FINISHED                                                                                                                                                         
+ => [internal] load build definition from Dockerfile                                                                                                                                 0.0s
+ => => transferring dockerfile: 164B                                                                                                                                                 0.0s
+ => [internal] load .dockerignore                                                                                                                                                    0.0s
+ => => transferring context: 2B                                                                                                                                                      0.0s
+ => [internal] load metadata for docker.io/library/ubuntu:18.04                                                                                                                      1.8s
+ => [1/4] FROM docker.io/library/ubuntu:18.04@sha256:4bc3ae6596938cb0d9e5ac51a1152ec9dcac2a1c50829c74abd9c4361e321b26                                                                0.0s
+ => [internal] load build context                                                                                                                                                    0.0s
+ => => transferring context: 30B                                                                                                                                                     0.0s
+ => CACHED [2/4] WORKDIR /usr/src/app                                                                                                                                                0.0s
+ => [3/4] RUN apt-get update && apt-get install -y curl                                                                                                                             10.2s
+ => [4/4] COPY script.sh .                                                                                                                                                           0.0s
+ => exporting to image                                                                                                                                                               0.3s 
+ => => exporting layers                                                                                                                                                              0.3s 
+ => => writing image sha256:507b4e9d9d7490bfe5270f2abe337bbe5a8818bd44ad2c4463f7dbbc5a50ffc5                                                                                         0.0s 
+ => => naming to docker.io/library/curler                                                                                                                                            0.0s 
+
+konsta@Konstas-MBP Dockerfile_18 % docker run -it curler   
+Input website:
+helsinki.fi
+Searching..
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="http://www.helsinki.fi/">here</a>.</p>
+</body></html>
+konsta@Konstas-MBP Dockerfile_18 % 
